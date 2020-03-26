@@ -1,0 +1,8 @@
+---
+# This is only requires if you are running centos6 or redhat 6 I am not quite confident if iptables is necessary for centos 7 or redhat 7 because of the firewalld things.
+
+- name: restart tomcat
+  service: name=tomcat state=restarted
+
+- name: restart iptables
+  service: name=iptables state=restarted
